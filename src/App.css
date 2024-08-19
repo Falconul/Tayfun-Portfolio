@@ -46,3 +46,50 @@ li {
 a:hover {
   background-color: #444;
 }
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0; /* Mobilde sidebar kaldırılır */
+    padding: 10px; /* Mobilde içerik etrafındaki boşluk azaltılır */
+  }
+
+  .profile-image {
+    width: 80px; /* Mobilde profil resmi küçültülür */
+    height: 80px;
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Mobilde başlık boyutu küçültülür */
+  }
+
+  h2 {
+    font-size: 1.25rem; /* Mobilde başlık boyutu küçültülür */
+  }
+
+  a {
+    font-size: 0.9rem; /* Mobilde bağlantı font boyutu küçültülür */
+  }
+
+  .btn-primary {
+    padding: 8px 16px; /* Mobilde buton boyutu küçültülür */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.25rem; /* Daha küçük ekranlar için başlık boyutu küçültülür */
+  }
+
+  h2 {
+    font-size: 1rem; /* Daha küçük ekranlar için başlık boyutu küçültülür */
+  }
+
+  .profile-image {
+    width: 60px; /* Daha küçük ekranlar için profil resmi küçültülür */
+    height: 60px;
+  }
+
+  .btn-primary {
+    padding: 6px 12px; /* Daha küçük ekranlar için buton boyutu küçültülür */
+  }
+}
