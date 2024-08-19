@@ -1,0 +1,60 @@
+/* footer.css */
+
+.footer {
+   
+    padding: 20px; /* İçerik ile kenarlar arasındaki boşluk */
+    text-align: center; /* Metni ortala */
+    width: 80%; /* Footer genişliği, sidebar'dan geriye kalan %85'lik alanı kaplayacak */
+    margin-left: 20%; /* Sidebar genişliği kadar sola boşluk bırak */
+    position: relative; /* Footer'ın konumunu sayfanın geri kalanına göre ayarlar */
+    bottom: 0; /* Footer'ı sayfanın en altına iter */
+    box-sizing: border-box; /* Padding ve border'ın toplam genişliğe dahil edilmesini sağlar */
+  }
+  
+  .footer .contact-info {
+    margin-bottom: 20px; /* Contact info alanının altına boşluk ekler */
+  }
+  
+  .footer .border-Contact {
+    width: 50px; /* Border genişliği */
+    height: 2px; /* Border yüksekliği */
+    background-color: #000; /* Border rengi */
+    margin: 10px auto; /* Ortalamak için kenar boşlukları */
+  }
+  
+  .footer h2 {
+    font-size: 1.5rem; /* Başlık boyutu */
+    margin-bottom: 10px; /* Başlık ile altındaki metin arasındaki boşluk */
+  }
+  
+  .footer p {
+    margin: 0 0 10px; /* Paragrafın altına boşluk ekler */
+    color: #555; /* Metin rengi */
+  }
+  
+  .footer .social-links {
+    display: flex;
+    justify-content: center; /* İkonları ortalar */
+    gap: 20px; /* İkonlar arasındaki boşluk */
+  }
+  
+  .footer .social-link {
+    color: #555; /* Link rengi */
+    font-size: 1.2rem; /* İkon boyutu */
+    transition: color 0.3s; /* Renk değişimi için geçiş efekti */
+  }
+  
+  .footer .social-link:hover {
+    color: #000; /* Hover sırasında link rengi */
+  }
+  
+  .footer i {
+    margin-right: 5px; /* İkon ile metin arasındaki boşluk */
+  }
+  
+  .footer p {
+    color: #777; /* Footer'ın alt kısmındaki metin rengi */
+    font-size: 0.9rem; /* Metin boyutu */
+    margin-top: 20px; /* Footer metni ile üstteki alan arasındaki boşluk */
+  }
+  
