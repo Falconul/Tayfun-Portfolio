@@ -46,50 +46,31 @@ li {
 a:hover {
   background-color: #444;
 }
-/* Responsive Tasarım */
-@media (max-width: 768px) {
+/* Ekran genişliği 513px ve üstü */
+@media only screen and (min-width: 513px) {
   .content {
-    margin-left: 0; /* Mobilde sidebar kaldırılır */
-    padding: 10px; /* Mobilde içerik etrafındaki boşluk azaltılır */
+    margin-left: 20%; /* Varsayılan margin */
+    padding: 20px; /* Varsayılan padding */
+  }
+
+  .sidebar-header {
+    flex-direction: row; /* Varsayılan düzenleme */
   }
 
   .profile-image {
-    width: 80px; /* Mobilde profil resmi küçültülür */
-    height: 80px;
-  }
-
-  h1 {
-    font-size: 1.5rem; /* Mobilde başlık boyutu küçültülür */
+    width: 120px; /* Varsayılan profil resmi boyutu */
+    height: 120px; /* Varsayılan profil resmi boyutu */
   }
 
   h2 {
-    font-size: 1.25rem; /* Mobilde başlık boyutu küçültülür */
+    font-size: 1.5rem; /* Varsayılan başlık font boyutu */
+  }
+  
+  ul {
+    padding-left: 20px; /* Varsayılan liste içi padding */
   }
 
-  a {
-    font-size: 0.9rem; /* Mobilde bağlantı font boyutu küçültülür */
-  }
-
-  .btn-primary {
-    padding: 8px 16px; /* Mobilde buton boyutu küçültülür */
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.25rem; /* Daha küçük ekranlar için başlık boyutu küçültülür */
-  }
-
-  h2 {
-    font-size: 1rem; /* Daha küçük ekranlar için başlık boyutu küçültülür */
-  }
-
-  .profile-image {
-    width: 60px; /* Daha küçük ekranlar için profil resmi küçültülür */
-    height: 60px;
-  }
-
-  .btn-primary {
-    padding: 6px 12px; /* Daha küçük ekranlar için buton boyutu küçültülür */
+  li {
+    margin: 10px 0; /* Varsayılan liste elemanı margin */
   }
 }

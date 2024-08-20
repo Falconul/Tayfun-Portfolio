@@ -94,4 +94,52 @@
     background-color: #000000;
     height: auto;
   }
-  
+  /* Responsive Tasarım */
+@media (max-width: 1024px) {
+  .horizontal-skills {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    padding: 10px;
+  }
+
+  .progress-bar {
+    height: 20px;
+  }
+
+  .skill-name {
+    font-size: 1rem;
+  }
+
+  .learning-status {
+    font-size: 0.8rem;
+  }
+
+  .skill-level {
+    font-size: 0.8rem;
+    right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .progress-bar {
+    height: 15px;
+  }
+
+  .skill-name {
+    font-size: 0.9rem;
+  }
+
+  .learning-status {
+    font-size: 0.7rem;
+  }
+
+  .skill-level {
+    font-size: 0.7rem;
+    right: 2px;
+  }
+}

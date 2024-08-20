@@ -2,9 +2,16 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './project.css';
-import project1 from '../images/Tayfun-Photo.png';
-import project2 from '../images/Tayfun-Photo.png';
-import project3 from '../images/Tayfun-Photo.png';
+import project1 from '../images/Creative-agency.png';
+import project2 from '../images/Cooking-Book.png';
+import project3 from '../images/To-Do-List.png';
+import project4 from '../images/Restaurant.png';
+import project5 from '../images/To-Do-List-2.png';
+import project6 from '../images/Hacker-News.png';
+import project7 from '../images/Whats-My-IP.png';
+import project8 from '../images/Mini-Yelp.png';
+import project9 from '../images/Food-Book-2.png';
+import project11 from '../images/Game-Dev-Finder.png';
 import { Link } from 'react-router-dom';
 
 const frontendProjects = [
@@ -27,27 +34,59 @@ const frontendProjects = [
     imageUrl: project3,
     detailsUrl: "/project-details/frontend/3",
   },
+  {
+    id:4,
+    title:"Frontend Project 4",
+    imageUrl: project4,
+    detailsUrl: "/project-details/frontend/4",
+  },
+  {
+    id:5,
+    title:"Frontend Project 5",
+    imageUrl: project5,
+    detailsUrl: "/project-details/frontend/5",
+  },
+  {
+    id:6,
+    title:"Frontend Project 6",
+    imageUrl: project6,
+    detailsUrl: "/project-details/frontend/6",
+  },
+  {
+    id:7,
+    title:"Frontend Project 7",
+    imageUrl: project7,
+    detailsUrl: "/project-details/frontend/7",
+  },
+  {
+    id:8,
+    title:"Frontend Project 8",
+    imageUrl: project8,
+    detailsUrl: "/project-details/frontend/8",
+  },
 ];
 
 const backendProjects = [
   {
-    id: 1,
+    id: 9,
     title: "Backend Project 1",
-    imageUrl: project1, // Kendi backend proje görsellerinizi buraya ekleyin
-    detailsUrl: "/project-details/backend/1",
+    imageUrl: project9, 
+    detailsUrl: "/project-details/backend/9",
   },
   {
-    id: 2,
-    title: "Backend Project 2",
-    imageUrl: project2,
-    detailsUrl: "/project-details/backend/2",
-  },
-  {
-    id: 3,
+    id:10,
     title: "Backend Project 3",
-    imageUrl: project3,
-    detailsUrl: "/project-details/backend/3",
+   
+    detailsUrl: "/project-details/backend/10",
   },
+  {
+    id: 11,
+    title: "Backend Project 4",
+    imageUrl: project11,
+    detailsUrl: "/project-details/backend/11",
+  },
+
+
 ];
 
 const Project = () => {

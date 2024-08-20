@@ -1,5 +1,6 @@
 // src/components/Contact.jsx
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com'; 
 import "./contact.css";
 
 const Contact = () => {
@@ -15,10 +16,16 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // You can implement email sending here using an email service like EmailJS
-        console.log('Form data:', formData);
-        alert("Thank you for reaching out! I'll get back to you soon.");
-        setFormData({ name: '', email: '', message: '' });
+        
+        emailjs.sendForm('service_hsy7hzq', 'template_7y1ljwf', e.target, 'Ch1Hrymup6-E-WaMv')
+            .then((result) => {
+                console.log('Email sent:', result.text);
+                alert("Thank you for reaching out! I'll get back to you soon.");
+                setFormData({ name: '', email: '', message: '' });
+            }, (error) => {
+                console.error('Email sending error:', error.text);
+                alert("Sorry, there was an error sending your message. Please try again later.");
+            });
     };
 
     return (
