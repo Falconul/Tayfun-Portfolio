@@ -6,7 +6,7 @@ const About = () => {
     <section id="about">
       <h1>About Me</h1>
       <p>
-        Hello! I'm Tayfun Deniz, a passionate software developer with a love for technology and continuous learning. I graduated from Balıkesir University, where I developed a strong foundation in computer science and programming.
+      Hello! I'm Tayfun Deniz, a passionate software developer with a love for technology and continuous learning. I graduated from Balıkesir University, where I developed a strong foundation in computer science and programming. After completing my degree, I furthered my education by completing a Full Stack Developer course at WBS Coding School, where I honed my skills in modern web development technologies and best practices.
       </p>
       <p>
         <strong>My Journey</strong><br />

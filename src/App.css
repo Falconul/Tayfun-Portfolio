@@ -20,12 +20,7 @@
   justify-content: center;
 }
 
-.profile-image {
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
 
 h2 {
   font-size: 1.5rem;
@@ -46,6 +41,12 @@ li {
 a:hover {
   background-color: #444;
 }
+.profile-image {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* Ekran genişliği 513px ve üstü */
 @media only screen and (min-width: 513px) {
   .content {
@@ -57,10 +58,7 @@ a:hover {
     flex-direction: row; /* Varsayılan düzenleme */
   }
 
-  .profile-image {
-    width: 120px; /* Varsayılan profil resmi boyutu */
-    height: 120px; /* Varsayılan profil resmi boyutu */
-  }
+
 
   h2 {
     font-size: 1.5rem; /* Varsayılan başlık font boyutu */
